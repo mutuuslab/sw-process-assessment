@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>손에 잡히는 SW 개발 프로세스 · 이해도 평가</title>
+<title>손에 잡히는 SW 개발 프로세스 · 오늘의 복습</title>
 <style>
   :root{
     --navy:#0b2545; --navy2:#13315c; --blue:#1d6fb8; --sky:#3aa0ff; --accent:#00b3a4;
@@ -428,24 +428,24 @@ function renderHome(){
   root.innerHTML = `
   ${topbar(false)}
   <div class="card hero">
-    <span class="badge">현대자동차 구매본부 · 3일 과정</span>
-    <h2>손에 잡히는 SW 개발 프로세스<br><span class="hl">이해도 평가</span></h2>
-    <p class="sub">협력사 SW 품질을 점검·관리하는 실무 관점에서, 학습한 핵심 개념을 점검합니다.
-    문항마다 <b>AI 학습 코치</b>가 정답·오답 이유를 짚어주고, 마지막에 개인별 약점 리포트를 드립니다.</p>
+    <span class="badge">현대자동차 구매본부 · 손에 잡히는 SW 개발 프로세스</span>
+    <h2>오늘 배운 내용,<br><span class="hl">얼마나 손에 잡혔을까요?</span></h2>
+    <p class="sub">점수를 매기는 시험이 아니라, 오늘 학습한 핵심 개념을 가볍게 되짚어 보는 시간이에요.
+    문항마다 <b>AI 학습 코치</b>가 바로 설명해 주니, 편하게 골라 보며 복습하면 됩니다. 😊</p>
     <div class="metrics">
-      <div class="metric"><div class="n">${TOTAL}문항</div><div class="l">객관식 (①~④)</div></div>
-      <div class="metric"><div class="n">100점</div><div class="l">문항당 10점</div></div>
-      <div class="metric"><div class="n">약 15분</div><div class="l">권장 응시 시간</div></div>
-      <div class="metric"><div class="n">${PASS_SCORE}점</div><div class="l">합격 기준</div></div>
+      <div class="metric"><div class="n">${TOTAL}개</div><div class="l">객관식 · 4지선다</div></div>
+      <div class="metric"><div class="n">약 10분</div><div class="l">부담 없는 분량</div></div>
+      <div class="metric"><div class="n">바로</div><div class="l">문항별 해설 제공</div></div>
+      <div class="metric"><div class="n">맞춤</div><div class="l">개인 복습 리포트</div></div>
     </div>
     <div class="namebox">
-      <label for="nm">이름 (또는 사번) 을 입력하세요</label>
-      <input class="input" id="nm" placeholder="예: 홍길동 / P12345" autocomplete="off">
-      <button class="cta" id="startBtn">평가 시작하기 →</button>
+      <label for="nm">이름(또는 닉네임)만 알려주세요</label>
+      <input class="input" id="nm" placeholder="예: 홍길동" autocomplete="off">
+      <button class="cta" id="startBtn">가볍게 시작하기 →</button>
       <button class="ghost" id="dashBtn">📊 강사용 대시보드 열기</button>
     </div>
     <div class="scope">
-      <h4>📚 평가 범위 (학습 핵심 키워드)</h4>
+      <h4>📚 오늘 함께 짚어볼 키워드</h4>
       <div class="tags">
         ${["V-모델","ASPICE 성숙도","ISO 26262 기능안전","요구사항 검증성","Traceability 추적성",
            "Quality Gate","변경관리·회귀시험","Test Evidence","Safety Case"]
@@ -472,7 +472,7 @@ function topbar(showHome){
   return `<div class="topbar">
     <div class="brand">
       <div class="logo">SW</div>
-      <div><h1>SW 개발 프로세스 이해도 평가</h1><p>현대자동차 구매본부 교육과정</p></div>
+      <div><h1>손에 잡히는 SW 개발 프로세스</h1><p>현대자동차 구매본부 교육과정</p></div>
     </div>
     ${showHome?`<button class="pillbtn" id="homeBtn">⌂ 처음으로</button>`:
       `<button class="pillbtn" id="setBtn">⚙ 설정</button>`}
